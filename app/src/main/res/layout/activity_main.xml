@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arasaka_logo"
+        android:layout_width="match_parent"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_height="0dp"
+        android:background="#000000"
+        android:foregroundGravity="center_horizontal"
+        />
+
+
+    <ImageView
+        android:id="@+id/object_picture"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:srcCompat="@drawable/factory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+         />
+
+    <TextView
+        android:id="@+id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/object_picture"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="@string/arasaka_object_name"
+        android:textColor="#FAFAFA"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-light"
+        />
+
+    <TextView
+        android:id="@+id/description"
+        app:layout_constraintBottom_toTopOf="@id/map_icon"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:background="#000000"
+        android:text="@string/arasaka_object_description"
+        android:textColor="#FAFAFA"
+        android:textSize="18sp"
+         />
+
+    <ImageView
+        android:id="@+id/map_icon"
+        app:layout_constraintBottom_toTopOf="@id/phone_icon"
+        app:layout_constraintStart_toStartOf="@id/phone_icon"
+        app:srcCompat="@android:drawable/ic_dialog_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:tint="#FAFAFA" />
+
+    <TextView
+        android:id="@+id/address"
+        app:layout_constraintBottom_toBottomOf="@+id/map_icon"
+        app:layout_constraintStart_toEndOf="@id/map_icon"
+        app:layout_constraintTop_toTopOf="@id/map_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="#000000"
+        android:text="@string/address"
+        android:textColor="#FAFAFA"/>
+
+    <ImageView
+        android:id="@+id/phone_icon"
+        app:layout_constraintBottom_toTopOf="@id/email_icon"
+        app:layout_constraintStart_toStartOf="@id/email_icon"
+        app:srcCompat="@android:drawable/stat_sys_phone_call"
+        app:tint="#FAFAFA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        />
+
+    <TextView
+        android:id="@+id/phone_number"
+        app:layout_constraintBottom_toBottomOf="@id/phone_icon"
+        app:layout_constraintStart_toStartOf="@id/address"
+        app:layout_constraintTop_toTopOf="@id/phone_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:clickable="true"
+        android:text="@string/phone_number"
+        android:textColor="#FAFAFA"
+        />
+
+    <ImageView
+        android:id="@+id/email_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        app:tint="#FAFAFA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:id="@+id/email"
+        app:layout_constraintBottom_toBottomOf="@id/email_icon"
+        app:layout_constraintStart_toEndOf="@id/address"
+        app:layout_constraintStart_toStartOf="@id/address"
+        app:layout_constraintTop_toTopOf="@id/email_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/email"
+        android:textColor="#FAFAFA"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

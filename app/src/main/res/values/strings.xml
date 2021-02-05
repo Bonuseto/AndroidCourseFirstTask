@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UdacityCourse</string>
+    <string name="arasaka_object_name">Arasaka Industrial Park</string>
+    <string name="arasaka_object_description">The Arasaka Weapons Factories is the largest industrial park located in Yokohama, Japan. The Arasaka Corporation pruchased the 500 acre land during the the Crash of \'94. The massive factory complex is located near the port in Tokyo Bay, and is used to supply a majority of Arasaka soldiers and troops.</string>
+    <string name="address">Yokohama, Kanagawa 221-0023, Japan</string>
+    <string name="phone_number">+81455058400</string>
+    <string name="email">industrialpark@arasaka.com</string>
+</resources>
